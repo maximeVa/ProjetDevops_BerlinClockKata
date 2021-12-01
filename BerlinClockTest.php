@@ -14,4 +14,15 @@ class BerlinClockTest extends TestCase
         // Assert
         $this->assertEquals("OOOOOOOOOOO OOOO", $actual);
     }
+    public function testGetBerlinHours0ShouldReturn8x0()
+    {
+        // Arrange
+        $berlinClock = new BerlinClock();
+
+        // Act
+        $actual = $berlinClock->getBerlinHours(0);
+
+        // Assert
+        $this->assertEquals("OOOO OOOO", $actual);
+    }
 }
