@@ -10,4 +10,9 @@ class BerlinClock {
         if($hours == 0)
             return "OOOO OOOO";
     }
+    public function getBerlinSeconds(int $seconds):String
+    {
+        if($seconds == 0)
+            return "Y";
+    }
 }
